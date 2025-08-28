@@ -1,33 +1,39 @@
 # D&D 5.5 Mob Calculator
 
-A simple web tool for calculating expected hits for groups of monsters in D&D 5.5 (DnD One). Designed for Game Masters to quickly resolve combat encounters with multiple identical creatures.
+A simple web-based tool to calculate expected hits for groups of creatures in D&D 5.5 (DnD One). Designed for Game Masters to quickly estimate outcomes in combat encounters with multiple identical creatures.
 
 ## Features
 
-- Select group size: 4, 6, 8, 10, 12, 16, or 20 monsters.
-- Enter the group's attack bonus.
-- Enter the target's AC.
+- Set group size (minimum 4 creatures).
+- Enter the creature's bonus (attack or check bonus).
+- Enter the target's DC (Armor Class or Difficulty Class).
 - Choose roll mode: normal, advantage, or disadvantage.
-- Automatically calculates the expected number of successful attacks.
+- Calculates the expected number of successful hits.
 
 ## Demo
 
-In process.
+You can host this using [GitHub Pages](https://pages.github.com/) or any static web server.  
+Or you can see it live on my page: [https://borjaumpierrezmayor.github.io](https://borjaumpierrezmayor.github.io)
 
 ## Usage
 
-In process.
+1. Open `index.html` in a browser or visit the live demo.
+2. Enter the desired group quantity (minimum 4).
+3. Enter the creatures' bonus and the target's DC.
+4. Select the roll mode.
+5. Click **Calculate Hits** to see the expected number of hits.
 
 ## Files
 
-- `index.html` – main HTML page
-- `style.css` – styles for the calculator
-- `script.js` – JavaScript logic for calculations and form validation
+- `index.html` – main HTML page.
+- `css/style.css` – styles for the calculator.
+- `js/script.js` – JavaScript logic for calculations and validation.
 
 ## Notes
 
-- Input validation prevents negative numbers for Attack Bonus and Target AC.
+- Inputs are validated to prevent values below the minimum (4 for group quantity, 0 for bonuses and DC).
 - Uses Bootstrap 5 for styling and responsive layout.
+- Form validation is built-in; negative numbers cannot be submitted.
 
 ## License
 
