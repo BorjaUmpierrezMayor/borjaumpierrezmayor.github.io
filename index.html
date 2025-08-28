@@ -13,15 +13,10 @@
     <form id="mobForm" class="needs-validation" novalidate>
       <div class="mb-3">
         <label for="groupQty" class="form-label">Group Quantity</label>
-        <select class="form-select" id="groupQty">
-          <option value="4">4</option>
-          <option value="6">6</option>
-          <option value="8" selected>8</option>
-          <option value="10">10</option>
-          <option value="12">12</option>
-          <option value="16">16</option>
-          <option value="20">20</option>
-        </select>
+        <input type="number" class="form-control" id="groupQty" min="4" value="8" required>
+        <div class="invalid-feedback">
+          Please enter a value 4 or higher.
+        </div>
       </div>
 
       <div class="mb-3">
