@@ -19,10 +19,10 @@ form.addEventListener('submit', function(event) {
 
   const groupQty = parseInt(document.getElementById("groupQty").value);
   const bonus = parseInt(document.getElementById("bonus").value);
-  const ac = parseInt(document.getElementById("ac").value);
+  const dc = parseInt(document.getElementById("dc").value);
   const mode = document.getElementById("mode").value;
 
-  const needed = ac - bonus;
+  const needed = dc - bonus;
   const pSuccess = successProbability(needed, mode);
   const expectedHits = Math.round(pSuccess * groupQty);
 
