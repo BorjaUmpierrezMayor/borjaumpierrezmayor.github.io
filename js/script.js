@@ -24,10 +24,10 @@ form.addEventListener('submit', function(event) {
 
   const needed = dc - bonus;
   const pSuccess = successProbability(needed, mode);
-  const expectedHits = Math.round(pSuccess * groupQty);
+  const expectedSuccesses = Math.round(pSuccess * groupQty);
 
   document.getElementById("result").innerText =
     `Need ${needed}+ on d20.
-     Individual hit chance: ${(pSuccess*100).toFixed(1)}%.
-     Out of ${groupQty} creatures, about ${expectedHits} hit.`;
+     Individual success chance: ${(pSuccess*100).toFixed(1)}%.
+     Out of ${groupQty} creatures, about ${expectedSuccesses} success.`;
 });
